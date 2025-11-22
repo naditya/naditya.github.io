@@ -64,22 +64,9 @@
             <div class="container">
                 <div class="row">
                     <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12">
-                        <h1>Welcome</h1>
+                        <h1>Welcome to PINK</h1>
                         <button onclick="myFunction()" class="main-button-slider">Enter your name here</button>
-                        <p id="hello">
-                            <script>
-                                function myFunction() {
-                                let text;
-                                let visitor = prompt("Please enter your name:", "");
-                                if (visitor == null || visitor == "") {
-                                    text = "Please enter your name";
-                                } else {
-                                    text = "Hello " + visitor + ", How are you?";
-                                }
-                                document.getElementById("hello").innerHTML = text;
-                                }
-                            </script>
-                        </p>
+                        <p id="hello"></p>
                     </div>
                 </div>
             </div>
@@ -196,10 +183,9 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="team-item">
                         <div class="team-content">
-                            <i><img src="assets/images/testimonial-icon.png" alt=""></i>
-                            <p>Proin a neque nisi. Nam ipsum nisi, venenatis ut nulla quis, egestas scelerisque orci. Maecenas a finibus odio.</p>
+                            <p>Rasakan kesegaran maksimal dengan perawatan yang dirancang untuk membuat kulit tampak cerah alami. Paket ini mencakup facial brightening, masker vitamin, dan pijat wajah relaksasi. Cocok untuk Anda yang ingin tampil segar dan bercahaya dalam waktu singkat.</p>
                             <div class="team-info">
-                                <h3 class="user-name">Paket Cantik Sekejap</h3>
+                                <h3 class="user-name">Paket Glow and Fresh</h3>
                             </div>
                         </div>
                     </div>
@@ -210,10 +196,9 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="team-item">
                         <div class="team-content">
-                            <i><img src="assets/images/testimonial-icon.png" alt=""></i>
-                            <p>Proin a neque nisi. Nam ipsum nisi, venenatis ut nulla quis, egestas scelerisque orci. Maecenas a finibus odio.</p>
+                            <p>Dapatkan rambut sehat, lembut, dan mempesona! Paket ini meliputi hair spa aromatherapy, potong rambut oleh stylist profesional, serta styling akhir sesuai keinginan Anda. Hadirkan kembali kilau alami rambut dengan perawatan intensif terbaik.</p>
                             <div class="team-info">
-                                <h3 class="user-name">Paket Cantik Sempurna</h3>
+                                <h3 class="user-name">Paket Hair Beauty Perfect</h3>
                             </div>
                         </div>
                     </div>
@@ -224,10 +209,9 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="team-item">
                         <div class="team-content">
-                            <i><img src="assets/images/testimonial-icon.png" alt=""></i>
-                            <p>Proin a neque nisi. Nam ipsum nisi, venenatis ut nulla quis, egestas scelerisque orci. Maecenas a finibus odio.</p>
+                            <p>Nikmati pengalaman relaksasi premium dari ujung kepala hingga kaki. Terdiri dari body massage, lulur spa, dan foot treatment untuk melepaskan penat dan mengembalikan energi tubuh. Paket sempurna bagi Anda yang ingin memanjakan diri sepenuhnya.</p>
                             <div class="team-info">
-                                <h3 class="user-name">Paket Cantik Alami</h3>
+                                <h3 class="user-name">Paket Royal Relaxation</h3>
                             </div>
                         </div>
                     </div>
@@ -294,30 +278,6 @@
                             </div>
                           </div>
                         </form>
-                        <script>
-                            // Mendapatkan elemen form berdasarkan ID
-                            const form = document.getElementById('contactForm');
-
-                            // Menambahkan "event listener" untuk event 'submit'
-                            form.addEventListener('submit', function(event) {
-                                // Mencegah pengiriman form default (yang akan me-refresh halaman)
-                                event.preventDefault();
-
-                                // Mendapatkan nilai input (opsional, untuk validasi atau pesan spesifik)
-                                const name = document.getElementById('name').value;
-                                const birth = document.getElementById('birth').value;
-                                const phone = document.getElementById('phone').value;
-                                const email = document.getElementById('email').value;
-                                const message = document.getElementById('message').value;
-
-                                // Menampilkan alert
-                                alert(`Terima kasih, Data anda berhasil disubmit.${name} ${birth} ${phone} ${email} ${message}`);
-
-                                // Di sini Anda bisa menambahkan logika lain,
-                                // seperti mengirim data ke server menggunakan Fetch API atau XMLHttpRequest
-                                // jika diperlukan.
-                            });
-                        </script>
                     </div>
                 </div>
                 <!-- ***** Contact Form End ***** -->
@@ -329,7 +289,7 @@
                         <div class="contact-text"></div>
                         <p>Jalan Gatot Subroto, Bandung
                         <br>+6222 - 999999</p>
-                        <p>hello@pnk.beauty</p>
+                        <p>hello@pink.beauty</p>
                     </div>
                 </div>
                 <!-- ***** Contact Text End ***** -->
@@ -343,11 +303,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="copyright">Copyright &copy; 2020 pnk</p>
+                    <p class="copyright">Copyright &copy; 2020 pink</p>
                 </div>
             </div>
         </div>
     </footer>
+    <!-- Script -->
+    <script src="js/script.js"></script>
     
     <!-- jQuery -->
     <script src="js/jquery-2.1.0.min.js"></script>
