@@ -23,6 +23,7 @@
     event.preventDefault();
 
         // Mendapatkan nilai input (opsional, untuk validasi atau pesan spesifik)
+        const tgl = new Date();
         const name = document.getElementById('name').value;
         const birth = document.getElementById('birth').value;
         const phone = document.getElementById('phone').value;
@@ -30,6 +31,6 @@
         const message = document.getElementById('message').value;
 
         // Menampilkan alert
-        alert(`Terima kasih, Data anda berhasil disubmit.\n\nNama Lengkap: ${name}\nTanggal Lahir: ${birth}\nNomor Telepon: ${phone}\nAlamat Email: ${email}\nPesan: ${message}`);
+        alert(`Terima kasih, Data anda berhasil disubmit.\n\n${tgl}\nNama Lengkap: ${name}\nTanggal Lahir: ${birth}\nNomor Telepon: ${phone}\nAlamat Email: ${email}\nPesan: ${message}`);
 
     });
